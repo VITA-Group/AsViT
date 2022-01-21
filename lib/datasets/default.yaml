@@ -1,0 +1,46 @@
+# https://github.com/yitu-opensource/T2T-ViT/blob/main/main.py
+aa: rand-m9-mstd0.5-inc1 # Disable all training augmentation, override other train aug args
+aug_splits: 0 # Number of augmentation splits (default: 0, valid: 0 or >=2)
+batch_size: 32
+color_jitter: 0.4 # Color jitter factor (default: 0.4)
+crop_pct: 0.9 # float, Input image center crop percent (for validation only)
+cutmix: 1.0 # cutmix alpha, cutmix enabled if > 0. (default: 0.)
+cutmix_minmax: null # cutmix min/max ratio, overrides alpha and enables cutmix if set (default: None)
+data: /path/to/imagenet # path to dataset
+distributed: false
+hflip: 0.5 # Horizontal flip training aug probability
+img_size: 64 # Image patch size (default: None => model default)
+interpolation: 'bicubic' # Image resize interpolation type (overrides model)
+mean: # Override mean pixel value of dataset
+  - 0.485
+  - 0.456
+  - 0.406
+mixup: 0.8 # mixup alpha, mixup enabled if > 0. (default: 0.)
+mixup_mode: batch # How to apply mixup/cutmix params. Per "batch", "pair", or "elem"
+mixup_off_epoch: 0 # Turn off mixup after this epoch, disabled if 0 (default: 0)
+mixup_prob: 1.0 # Probability of performing mixup or cutmix when either/both is enabled
+mixup_switch_prob: 0.5 # Probability of switching to cutmix when both mixup and cutmix enabled
+no_aug: false # Disable all training augmentation, override other train aug args
+no_prefetcher: false # disable fast prefetcher
+num_classes: 1000 # number of label classes (default: 1000)
+pin_mem: false # Pin CPU memory in DataLoader for more efficient (sometimes) transfer to GPU.
+ratio: # Random resize aspect ratio (default: 0.75 1.33)
+- 0.75
+- 1.3333333333333333
+recount: 1 # Random erase count (default: 1)
+remode: pixel # Random erase mode (default: "const")
+reprob: 0.25 # Random erase prob (default: 0.25)
+resplit: false # Do not random erase first (clean) augmentation split
+scale: # Random resize scale (default: 0.08 1.0)
+- 0.08
+- 1.0
+smoothing: 0.1 # Label smoothing (default: 0.1)
+std: # Override std deviation of of dataset
+  - 0.229
+  - 0.224
+  - 0.225
+train_interpolation: random # Training interpolation (random, bilinear, bicubic default: "random")
+use_multi_epochs_loader: false # use the multi-epochs-loader to save time at the beginning of every epoch
+validation_batch_size_multiplier: 1
+vflip: 0.0 # Vertical flip training aug probability
+workers: 8
