@@ -20,27 +20,6 @@ Highlights:
 * **Trainig-free ViT Architecture Design**: we design a "seed" ViT topology by leveraging a training-free search process. This extremely fast search is fulfilled by our comprehensive study of ViT's network complexity (length distorsion), yielding a strong Kendall-tau correlation with ground-truth accuracies.
 * **Trainig-free ViT Architecture Scaling**: starting from the "seed" topology, we automate the scaling rule for ViTs by growing widths/depths to different ViT layers. This will generate a series of architectures with different numbers of parameters in a single run.
 * **Efficient ViT Training via Progressive Tokenization**: we observe that ViTs can tolerate coarse tokenization in early training stages,  and further propose to train ViTs faster and cheaper with a progressive tokenization strategy.
-<!-- * **SOTA**: TE-NAS achieved extremely fast search speed (one 1080Ti, 20 minutes on NAS-Bench-201 space / four hours on DARTS space on ImageNet) and maintains competitive accuracy. -->
-
-<!--
-<p align="center">
-<img src="images/????.png" alt="201" width="550"/></br>
-</p>
-<p align="center">
-<img src="images/????.png" alt="darts_cifar10" width="550"/></br>
-</p>
-<p align="center">
-<img src="images/????.png" alt="darts_imagenet" width="550"/></br>
-</p>
--->
-
-<!--
-## Methods
-
-<p align="center">
-<img src="images/????.png" alt="algorithm" width="800"/></br>
-</p>
--->
 
 
 ## Prerequisites
@@ -56,7 +35,7 @@ This repository has been tested on V100 GPU. Configurations may need to be chang
 * Clone this repo:
 ```bash
 git clone https://github.com/VITA-Grou/AsViT.git
-cd TEGNAS
+cd AsViT
 ```
 * Install dependencies:
 ```bash
