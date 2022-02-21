@@ -22,7 +22,7 @@ Highlights:
 * **Efficient ViT Training via Progressive Tokenization**: we observe that ViTs can tolerate coarse tokenization in early training stages,  and further propose to train ViTs faster and cheaper with a progressive tokenization strategy.
 
 <p align="center">
-  <img src="images/github_teaser.png" alt="teaser" width="600"/></br>
+  <img src="images/github_teaser.png" alt="teaser" width="1000"/></br>
   <span align="center"><b>Left</b>: Length Distortion shows a strong correlation with ViT's accuracy. <b>Middle</b>: Auto scaling rule of As-ViT. <b>Right</b>: Progressive re-tokenization for efficient ViT training.</span>
 </p>
 
